@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#area{
+            background: blue;
+            color:white;
+            width: 200px;
+            height: 200px;
+            font-size: 30px;
+            text-align: center;
+            line-height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        Interaja
+    </div>
+    <script>
+        var a = document.getElementById('area');
+        a.addEventListener('click', clicar)  // usamos o addEventListener para deixar o html mais limpo
+        a.addEventListener('mouseenter', entrar) //O primeiro parametro é o evento e o segundo a funçao que será executada
+        a.addEventListener('mouseout', sair)
+
+        function clicar(){
+            var body = document.body // crio uma var com "direcionamento" para o body 
+            a.innerText= 'clicou'
+            a.style.background = 'red'
+            body.style.background =  'blue' /// Uso a variavel para demonstrar onde será modificado
+        }
+        
+        function entrar(){
+            a.innerText= 'Entrou'
+            a.style.background = 'green'
+        }
+        function sair(){
+            a.innerText= 'Interaja'
+            a.style.background = 'blue'
+            document.body.style.background =  'white' //dessa forma não preciso determinar uma variavel  
+        }
+
+    </script>
+</body>
+</html>
