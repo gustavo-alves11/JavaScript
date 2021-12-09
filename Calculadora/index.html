@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    
+    <style>
+       /* body{
+            height: 100vh;
+        }
+        button{
+            height: 50px;
+            width: 50px;
+            align-items: center;
+            border-radius: 0;
+            margin: 5px;
+            border-style: none;
+            color:black;
+            background: azure;
+        }
+        
+
+        input{
+            display: flex;
+            align-items: center;
+            margin: 10px;
+            height: 20px;
+            width: 280px;
+            background: azure;
+            border-radius: 0;
+            border-style: solid;
+            border-bottom: black;
+            border-width: 2px;
+        }
+        h2{
+            margin: 10px;
+            height: 20px;
+            width: 280px;
+        }
+        textarea{
+            display: flex;
+            align-items: center;
+            margin: 10px;
+            height: 20px;
+            width: 280px;
+            background: azure;
+            border-radius: 0;
+            border-style: solid;
+            border-bottom: black;
+            border-width: 2px;
+            
+            
+        }
+        div.calc{
+            
+            display: grid;
+            grid-template-columns: repeat(5 1fr);
+            grid-template-rows: repeat(2 1fr);
+            max-width: 320px;
+            align-items: center;
+            margin: 15px;
+            border-radius: 0;
+            border-style: solid;
+            margin: 0 auto;
+            border-bottom: black;
+            border-width: 5px;
+            background: orange;
+        }
+        div.botoes{
+            display: flex;
+            align-items: center;
+            margin: 5px;
+        }
+        */
+    </style>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <div class="calc">
+            <h2>Numero:</h2>
+            <input type="number" id="n1">
+            <h2>Numero:</h2>
+            <input type="number" id="n2">
+            <h2>Resultado:</h2>
+            <div id="r"></div>
+            <div class="botoes">
+                <button type="button" id="somar">+</button>
+                <button type="button" id="subtrair">-</button>
+                <button type="button" id="dividir">/</button>
+                <button type="button" id="multiplicar">X</button>
+            </div>
+    </div>
+    <script src="calc.js"></script><!-- O script será executado na ordem em que foi
+    mencionado no corpo do HTML (nesse caso por ultimo, evitando alguns erros)-->
+</body>
+</html>
