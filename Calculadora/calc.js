@@ -20,8 +20,7 @@ function somar(){
 }
 
 function subtrair(){
-    R = parseInt(n1)-parseInt(n2)
-    console.log(R)
+    R = parseInt(n1)-parseInt(n2);
     var h3 = document.createElement('h3'); // cria um elemento no html
     var result = document.createTextNode("A subtração dos dois numeros é "+R) /// criando uma variavel com um texto
     h3.appendChild(result);  //add um 'nó' na estrutura
@@ -35,18 +34,21 @@ function dividir(){
     document.getElementById("r").appendChild(h3); // onde será inserido
 }
 function multiplicar(){
-    R = n1*n2
+    R = n1*n2; // cria um elemento no html
     var h3 = document.createElement('h3'); // cria um elemento no html
-    var result = document.createTextNode("A multiplicação dos dois numeros é "+R) /// criando uma variavel com um texto
+    var result = document.createTextNode("A multiplicação dos dois numeros é "+R); /// criando uma variavel com um texto
     h3.appendChild(result);  //add um 'nó' na estrutura
-    document.getElementById("r").appendChild(h3); // onde será inserido 
+    document.getElementById("r").appendChild(h3); // onde será inserido
+       
 }
 
+//if (){
+ //   exibir(result);   }
 
-function exibir(){
-    // não funcionou
-
-}
+//function exibir(result){
+//    var h3 = document.createElement('h3'); // cria um elemento no html
+ //   h3.appendChild(result);
+//    document.getElementById("r").appendChild(h3);}
 
 
 

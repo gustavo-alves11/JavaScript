@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troca a cor</title>
+    <style>
+        div#sema{
+            display: flexbox;
+            flex-direction: column;
+            height: 450px;
+            border-radius: 10%;
+            width: 200px;
+            background-color: black;
+            justify-content: space-around;
+
+        }
+        div#red{
+            height: 140px;
+            width: 140px;
+            border-radius: 50%;
+            margin: 0 auto;
+            justify-content: space-around;
+            background-color:#660000;
+        }
+        div#yellow{
+            height: 140px;
+            width: 140px;
+            border-radius: 50%;
+            margin: 0 auto;
+            
+            justify-content: space-around;
+            background-color:#b3a314;
+        }
+        div#green{
+            height: 140px;
+            width: 140px;
+            border-radius: 50%;
+            margin: 0 auto;
+            
+            justify-content: space-around;
+            background-color:green;
+        }
+    </style>
+</head>
+<body>
+    <div id="sema">
+        <div id= "red">
+        </div>
+        <div id= "yellow">
+        </div>
+        <div id= "green">
+        </div>
+    </div>
+    <div id= 'buttons'>
+    <button id='vermelho'>Vermelho</button>
+    <button id="amarelo">Amarelo</button>
+    <button id="verde">Verde</button>
+    <button id="auto">Automático</button>
+    </div>
+    <script src="sema.js"></script>
+</body>
+</html>
