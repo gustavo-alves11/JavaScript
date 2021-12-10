@@ -1,16 +1,17 @@
-const red = document.getElementById('red');
-const yellow = document.getElementById('yellow');
-const green = document.getElementById('green');
-const buttons = document.getElementById('buttons');
+const red = document.getElementById('red');         // chamando div que será modificada
+const yellow = document.getElementById('yellow'); // chamando div que será modificada
+const green = document.getElementById('green'); // chamando div que será modificada
+const buttons = document.getElementById('buttons'); // chamando div que contem os botões 
 let corIndex = 0;
 let intervalo = null;
 
+
+// essa funçao chama os botoes de forma dinamica
 const controle = (event) => {           //
     pararIntervalo(); // funçao para parar o loop quando clicar em outro botão 
-    funcoes[event.target.id]();         //     Isso para
-}                                       //   chamar os botoes de forma dinamica
+    funcoes[event.target.id]();         
+}                          
 buttons.addEventListener('click', controle); //
-
 
 
 const Index = () => { /// serve para somar um numero ao index
@@ -29,16 +30,16 @@ const mudarCor = () => { // uma arrow function retorna um valor mais facilmente,
 let funcoes = { // um objeto para chamar as funçoes de maneira mais dinamica
 // Em um objeto só é possivel definir uma arrow function dessa forma 
 'vermelho': () => { red.style.background = 'red'; 
-                    yellow.style.background = '#b3a314'; 
+                    yellow.style.background = '#b3a314'; // essas funçoes alteram as cores dos circulos 
                     green.style.background = 'green';
 },
 'amarelo': () => {  red.style.background = '#660000';
-                    yellow.style.background = 'yellow';
+                    yellow.style.background = 'yellow'; // essas funçoes alteram as cores dos circulos
                     green.style.background = 'green';
 
 },
 'verde': () =>     {red.style.background = '#660000';
-                    yellow.style.background = '#b3a314';
+                    yellow.style.background = '#b3a314'; // essas funçoes alteram as cores dos circulos
                     green.style.background = '#00FF00';
 },
 'auto':() =>   {
