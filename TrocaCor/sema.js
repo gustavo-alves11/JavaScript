@@ -20,7 +20,7 @@ const Index = () => { /// serve para somar um numero ao index
 
 
 const mudarCor = () => { // uma arrow function retorna um valor mais facilmente, por isso está sendo ultilizada
-    const cores = ['vermelho','amarelo','verde'];  //um array com stings de mesmo nome das viriaveis 
+    const cores = ['vermelho','amarelo','verde'];  //um array com stings de mesmo nome das variáveis 
     const cor = cores[corIndex]; // apos o index ser alterado na funçao anterior aqui vai definir as cores
     funcoes[cor](); /// com a cor definida ele vai ser executado
     Index(); // funçao que vai retornar o valor de corindex, que é uma variavel global

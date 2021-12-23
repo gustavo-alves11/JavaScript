@@ -1,0 +1,55 @@
+body{
+    background: gray;
+    min-height: 90vh;
+    padding-bottom: 200px;
+    margin: 0;
+}
+div.cont{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    min-height: 400px;
+    
+    margin:6% 10% 0% 10%;
+    
+    
+}  
+div.form{
+    display: flex;
+    padding: 10%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: whitesmoke;
+}
+div.img{
+    background: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background: whitesmoke;
+}
+label{
+    font-size: 120%;
+    margin: 10px;
+}
+button{
+    height: 40px;
+    width: 150px;
+    color: black;
+    background: rgba(107, 202, 12, 0.952);
+    border-radius:10px;
+    font-style: inherit;
+}
+
+img{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+form{
+    background: cornflowerblue;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronometro</title>
+    <style>
+        body{
+            padding-top: 80px ;
+            height: 100%;
+            width: 100%;
+            background: rgb(49, 49, 49);
+        }
+        h1{
+            font-size: 60px;
+        }
+        div#relogio{
+            display:flex;
+            width: 400px;
+            padding: 50px;
+            flex-direction: column;
+            align-items: center;
+            margin:0 auto;
+            background: rgb(77, 77, 77);
+        }
+        button{
+            border-style: none;
+            width: 100px;
+            height: 50px;
+        }
+        button#start{
+            background: rgb(33, 216, 27);
+        }
+        button#stop{
+            background: red;
+        }
+        button#rest{
+            background: rgb(33, 216, 27);
+        }
+
+    </style>
+</head>
+<body>
+<div id="relogio">
+        
+        <h1 id="h1">00:00:00:0</h1>
+    
+    <div id="buttons">
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+        <button id="reset">Reset</button>
+    </div>
+</div>
+</body>
+<script src="cronometro.js"></script>
+</html>
