@@ -1,46 +1,3 @@
-// var dateStart = new Date;
-// const exibir = document.getElementById('relogio');
-
-
-// function datenow(){
-//     var datefinish = new Date;
-//     var dateDecorrido = datefinish - dateStart
-//     return dateDecorrido;
-// }
-// let functions = {
-
-//     'start': (dateDecorrido) => {
-//         dateStart = new Date;
-//         dateStart = dateDecorrido + dateStart;
-//         interval = setInterval(miliToHours, 1);
-        
-//     },
-//     'stop':  () => {
-        
-//         clearInterval(interval);
-//     },
-//     'reset': () => {
-//         datenow();
-//     }
-// }
-// const controle = (event) => {           
-//     functions[event.target.id]();
-// }
-// buttons.addEventListener('click', controle);
-
-
-// function miliToHours(){
-//     var mili = parseInt((datenow()%1000)/100)
-//     var sec = parseInt((datenow() / 1000)%60);
-//     var min = parseInt((datenow()/(1000*60))%60);
-//     var hour = parseInt((datenow()/(1000*60*60))%24);
-//     var hour = hour < 10 ? "0" + hour : hour;
-//     var min = min < 10 ? "0" + min : min;
-//     var sec = sec < 10 ? "0" + sec : sec;
-//     const time = [hour, min, sec, mili];
-//     exibir.innerHTML = time.join(":");
-// }Parei de fazer dessa forma devido ao fato de quando pauso o tempo continua contando, após algumas modificaçoes no cod o retorno éNaN 
-
 var mili =0;
 var seg = 0;
 var min = 0;
@@ -48,14 +5,15 @@ var hour = 0;
 
 const exibir = document.getElementById('h1');
 
+// essa function usa um array para executar funçoes de maneira mais eficiente
 const controle = (event) => {           
-    functions[event.target.id]();
+    functions[event.target.id](); 
 }
-buttons.addEventListener('click', controle);
+
+buttons.addEventListener('click', controle); // chama a function controle 
 // buttons.addEventListener('mouseOn', controle);
 
-
-
+/// criei um array usando arrow functions 
 const functions = {
     'start': () => {
         interval = setInterval(timer, 95)

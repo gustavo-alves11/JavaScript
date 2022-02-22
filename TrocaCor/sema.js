@@ -11,7 +11,7 @@ const controle = (event) => {           //
     pararIntervalo(); // funçao para parar o loop quando clicar em outro botão 
     funcoes[event.target.id]();         
 }                          
-buttons.addEventListener('click', controle); //
+buttons.addEventListener('click', controle); // quando clicar em um botao executa a function controle
 
 
 const Index = () => { /// serve para somar um numero ao index

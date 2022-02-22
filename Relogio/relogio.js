@@ -1,9 +1,9 @@
-const exibir = document.getElementById('relogio');
+const exibir = document.getElementById('relogio'); ///local onde será exibido o relogio
 
 
-function hAtual(){
-    var hora = new Date();
-    var hour = hora.getHours();
+function hAtual(){  // function princopal onde tudo funciona
+    var hora = new Date(); // instanciando o objeto Date
+    var hour = hora.getHours(); //usando método get hours para 
     var min = hora.getMinutes();
     var sec = hora.getSeconds();
     var hour = hour < 10 ? "0" + hour : hour;

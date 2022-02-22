@@ -1,0 +1,44 @@
+html, body, p{
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    /* para zerar os parametros pre definidos */
+  }
+
+body{
+    padding-top: 10%;
+}
+
+.seach{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 5%;
+    width: 35%;
+    margin: 0 auto;
+    align-items:inherit;
+
+}
+.conteiner{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background: rgb(211, 211, 211);
+    padding: 5%;
+    width: 35%;
+    margin: 0 auto;
+    align-items:inherit;
+}
+h1, h2{
+    margin: 0 auto;
+}
+
+input{
+    margin: 0 auto;
+    width: 70%;
+}
+button{
+    width: 20%;
+}
