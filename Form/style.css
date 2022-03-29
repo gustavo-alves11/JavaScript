@@ -1,0 +1,108 @@
+/* :root{ e aqui variaveis} */
+
+
+*{
+    /* zerando padrões pré definidos */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    
+    background-color: lightgray;
+    color:seashell;
+}
+
+form{
+    background-color: dimgray;
+    
+    /* Gostei dessa maneira de dimencionar pois de certa forma ele deixa responsivo */
+    width: 100%;  
+    max-width: 500px;
+
+    /* Lembrar que a margin atua fora do form e o padding atua dentro */
+    margin: 32px auto;
+    padding: 32px 64px; /*32px top e bottom e 64 L e R*/ 
+    
+    display: flex;
+    flex-direction: column;
+}
+form h2{
+    margin-bottom: 32px;
+}
+
+
+div.input{
+    /* estiliza a div não o input em si  */
+    margin-bottom: 24px;
+     /*usamos o position relative para trabalhar com o alinhamento do label no input */
+    position: relative; 
+}
+
+input, button{
+    /* Zerando padroes de appeance do navegador */
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+
+    /* Box input e button */
+    width: 100%;
+    padding: 16px 0;
+    border: none;
+    border-bottom: 1px solid darkcyan;
+
+    background-color: transparent;
+    
+    outline: none;
+
+    /* text */
+    color: seashell;
+    font-size: 1em;
+}
+button{
+    margin-top: 16px;
+    background-color: darkcyan;
+}
+
+/* o ~ serve para procurar o label irmão*/
+input ~ label{
+    /* o input será realocado com o position absolute */
+    position:absolute;
+    top: 16px;
+    left: 0;
+
+    color: seashell;
+
+    transition: .4s;
+}
+
+/* focus quando o input está em foco */
+input:focus ~label,
+input:valid ~label{
+    /*  */
+    transform: translateY(-24px);
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+}
+
+.input span.error {
+    display: flex;
+    
+    padding: 0;
+
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+.input span.error.active {
+    border: 1px solid red;
+    padding: 0.4em;
+}

@@ -9,7 +9,7 @@ let intervalo = null;
 // essa funçao chama os botoes de forma dinamica
 const controle = (event) => {           //
     pararIntervalo(); // funçao para parar o loop quando clicar em outro botão 
-    funcoes[event.target.id]();         
+    funcoes[event.target.id]();       
 }                          
 buttons.addEventListener('click', controle); // quando clicar em um botao executa a function controle
 
